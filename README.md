@@ -1,3 +1,7 @@
+installation :
+
+gem install ooor_finders
+
 Following behaviors are added
 
 find_by_XX
