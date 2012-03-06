@@ -61,7 +61,7 @@ module Ooor
         if match
           return send(:_find_or_instantiator_by_attributes, match, arguments)
         end
-        return method_missing_original(method_symbol, arguments)
+        return method_missing_original(method_symbol, *arguments)
       end
     end
   end
