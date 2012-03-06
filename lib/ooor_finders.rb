@@ -1,0 +1,1 @@
+require "open_object_resource"
