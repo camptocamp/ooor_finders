@@ -19,9 +19,10 @@ module Ooor
             eval("res.#{attributes[index]} = arguments[index]")
           end
         end
-        res.create
         if xml_id
-          res.ir_model_data_id = xml_id
+          res.ir_model_data_id = xml_id.split('.')
+        end
+        if match.instantiator == :create
           res.save
         end
         return res

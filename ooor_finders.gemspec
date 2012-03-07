@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name = %q{ooor_finders}
-  s.version = "0.1.2"
+  s.version = "0.1.5"
   s.date = %q{2013-03-06}
   s.authors = ["Nicolas Bessi - Camptocamp"]
   s.summary = %q{OOOR - OpenObject On Ruby dynamic finder extention}
