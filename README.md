@@ -21,7 +21,7 @@ ResUsers.find_by_name('Administrator').id
 ResUsers.find_by_name!('Administrator').id Will throw an exception if you put a ! at the end and nothing is found
 ```
 
-We can also use first or last:
+We can also use all or last:
 
 ```ruby
 ResUsers.find_all_by_name('Administrator')
