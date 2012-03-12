@@ -1,5 +1,6 @@
 require 'rubygems'
 require 'ooor'
+require 'dynamic_finder_match'
 module Ooor
   class OpenObjectResource
     class << self
