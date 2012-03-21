@@ -12,6 +12,7 @@ Gem::Specification.new do |s|
   s.description  = %q{Add Active Record like dynamic finder pattern}
   s.files        = `git ls-files`.split("\n")
   s.require_path = 'lib'
+  s.homepage      = "http://github.com/camptocamp/ooor_finders"
 
   s.add_dependency('ooor', [">= 1.6.5"])
 
