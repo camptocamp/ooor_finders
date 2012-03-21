@@ -1,13 +1,12 @@
-require 'rubygems'
 require 'ooor'
-require 'dynamic_finder_match'
+require 'ooor/finders/dynamic_finder_match'
 module Ooor
   class OpenObjectResource
     class << self
       alias_method :method_missing_original, :method_missing
-      
+
       def _instanciate_by_attributes(match, arguments)
-        # TODO check relation and send a warning        
+        # TODO check relation and send a warning
         res = self.new
         attributes = match.attribute_names
         xml_id = nil
@@ -28,7 +27,7 @@ module Ooor
         end
         return res
       end
-      
+
       def _find_or_instantiator_by_attributes(match, arguments)
         unique_keys = ['xml_id', 'id', 'oid']
         options = {}
@@ -57,7 +56,7 @@ module Ooor
         end
         return res
       end
-      
+
       def method_missing(method_symbol, *arguments)
         match = DynamicFinderMatch.match(method_symbol.to_s)
         if match

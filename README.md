@@ -13,12 +13,14 @@ Following behaviors are added
 * find_by_xml_id or alias find_by_oid
 
 So we can do:
+
 ```ruby
-require "ooor_finders"
+require "ooor/finders"
+
 ResUsers.find_by_xml_id('module.xml_id').id
 ResUsers.find_by_id(23).id
 ResUsers.find_by_name('Administrator').id
-ResUsers.find_by_name!('Administrator').id Will throw an exception if you put a ! at the end and nothing is found
+ResUsers.find_by_name!('Administrator').id # Will throw an exception if you put a ! at the end and nothing is found
 ```
 
 We can also use all or last:
@@ -47,5 +49,5 @@ ResUsers.find_all_by_name('Administrator', :fields=>['id'], :limit=>20)
 Installation
 *************
 ```
-gem install ooor_finders
+gem install ooor-finders
 ```
