@@ -1,4 +1,3 @@
-
 # Active Record Dynamic Finder Match
 #
 # Taken from active record source code
