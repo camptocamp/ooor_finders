@@ -8,6 +8,9 @@ module Ooor
       def _instanciate_by_attributes(match, arguments)
         # TODO check relation and send a warning
         res = self.new
+        if RUBY_VERSION  >= '1.9.0' # related to system stack level error
+          res.id = nil
+        end
         attributes = match.attribute_names
         xml_id = nil
         attributes.length.times do |index|
