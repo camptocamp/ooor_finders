@@ -5,7 +5,7 @@ OOOR Finders
 !!!!
 
 This repository deprecated and not maintained by Camptocamp anymore.
-If you are interested in becoming the new maintener just send a notification to camptocamp account
+If you are interested in becoming the new maintainer just send a notification to camptocamp account
 
 !!!
 
